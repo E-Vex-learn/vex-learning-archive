@@ -19,5 +19,12 @@ int main(void)
 
     strcpy(buflin.chars, "Hello");
 
+    buflin.length = strlen("Hello");
+
+    printf("buflin char: %d\n", buflin.chars);
+    printf("buflin length: %d\n", buflin.length);
+
+    free(buflin.chars);
+
     return 0;
 }
